@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Absolute and relative</title>
+        <style>
+            .re{
+                height: 300px;
+                width: 300px;
+                border: 2px solid green;
+                position: relative;
+                background-color: orange;
+                /* z-index: 1; */
+            }
+            .ab{
+                height: 100px;
+                width: 100px;
+                background-color: gray;
+                position: absolute;
+                left: 20px;
+                top: 10%;
+                z-index: 0;
+            }
+            p{
+                margin: 0;
+                background-color: bisque;
+                position: absolute;
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="re">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa assumenda in sed unde eos corrupti, incidunt voluptates ipsum labore nulla, voluptatibus culpa. Aspernatur saepe sed aliquid repellendus, illo repellat doloribus!</p>
+            <div class="ab"></div>
+        </div>
+    </body>
+</html>
