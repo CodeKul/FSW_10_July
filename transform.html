@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Transform</title>
+        <style>
+            .rotate{
+                height: 200px;
+                width: 200px;
+                background-color: gray;
+                margin-top: 5%;
+                /* transform: rotate(360deg); */
+                transition-duration: 10s;
+            }
+            .rotate:hover{
+                transform: rotate(360deg);
+            }
+            .skew{
+                height: 200px;
+                width: 200px;
+                background-color: brown;
+                margin-top: 5%;
+                margin-left: 5%;
+                /* transform: skew(-15deg,10deg); */
+                transition-duration: 5s;
+            }
+            .skew:hover{
+                transform: skew(-15deg,20deg);
+                box-shadow: 10px 10px 0px black;
+            }
+
+            .main{
+                display: flex;
+            }
+            .scale{
+                margin-top: 5%;
+                /* margin-left: 5%; */
+                height: 200px;
+                width: 200px;
+                background-color: gray;
+                /* transform: scale(1.1); */
+                transition-duration: 5s;
+            }
+            .scale:hover{
+                transform: scale(1.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="rotate">Rotate</div>
+        <div class="main">
+        <div class="skew">Skew</div>
+        <div class="skew">Skew</div>
+        <div class="skew">Skew</div>
+        <div class="skew">Skew</div>
+        <div class="skew">Skew</div>
+        <div class="skew">Skew</div>    
+    </div>
+        <div class="main">
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+
+    </div>
+    </body>
+</html>
