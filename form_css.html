@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Form CSS</title>
+        <style>
+            form{
+                background-color: thistle;
+                padding: 5rem;
+                height: 20rem;
+            }
+            .main{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                font-size: 1.5rem;
+                color: rgb(43, 6, 43);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 500;
+                margin: 1rem;
+            }
+            .forlabel{
+                width: 20rem;
+            }
+            .forinput{
+                width: 30rem;
+            }
+            input{
+                width: 70%;
+                padding: 1%;
+                background-color: rgba(240, 248, 255, 0);
+                border: none;
+                border-bottom: 1px solid rgb(32, 5, 32);
+            }
+            input:focus{
+                outline:none;
+                /* background-color: beig; */
+                /* border: none; */
+                /* border-top: 2px solid saddlebrown; */
+            }
+            input[type=email]{
+                background-image: url(https://www.freepnglogos.com/uploads/email-logo-png-27.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                /* background-position-x: 100%; */
+                padding-left: 2rem;
+            }
+            input[type=radio]{
+                width: 10%;
+            }
+            input[type=submit]{
+                width: 10%;
+                background-color: rgb(60, 6, 60);
+                color: white;
+                font-weight: 900;
+                transition-duration: 2s;
+                transition-timing-function: ease-in-out;
+            }
+            input[type=submit]:hover{
+                box-shadow: 5px 5px 0px rgb(92, 21, 92);
+                /* margin: -0.1rem; */
+                transform: scale(1.1);
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="post">
+            <div class="main">
+                <div class="forlabel">
+                    <label>User Name : </label>
+                </div>
+                <div class="forinput">
+                    <input type="text" name="username"><br>
+                </div>
+            </div>
+            <div class="main">
+                <div class="forlabel">
+                    <label>User Email : </label>
+                </div>
+                <div class="forinput">
+                    <input type="email" name="username"><br>
+                </div>
+            </div>
+            <div class="main">
+                <div class="forlabel">
+                    <label>User Address : </label>
+                </div>
+                <div class="forinput">
+                    <input type="text" name="username"><br>
+                </div>
+            </div>
+            <div class="main">
+                <div class="forlabel">
+                    <label>Contact Number : </label>
+                </div>
+                <div class="forinput">
+                    <input type="tel" name="username"><br>
+                </div>
+            </div>
+            <div class="main">
+                <div class="forlabel">
+                    <label>Gender :</label>
+                </div>
+                <div class="forinput">
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Other
+                </div>
+            </div>
+            <div class="main">
+                <input type="submit"/>
+            </div>
+        </form>
+    </body>
+</html>
