@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Google logo</title>
+        <style>
+            .google{
+                width: 300px;
+                height: 300px;
+                border-top: 100px solid #e43e2b;
+                border-left: 100px solid #f0b501;
+                border-bottom: 100px solid #2ba24c;
+                border-right: 100px solid #3b7ded;
+                border-radius: 50%;
+                background-color: white;
+                position: relative;
+            }
+            .google:after{
+                content: '';
+                z-index: 101;
+                position: absolute;
+                right: -100px;
+                top: -77px;
+                border-top: 200px solid transparent;
+                border-right: 300px solid white;
+                width: 0;
+                height: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="google"></div>
+    </body>
+</html>

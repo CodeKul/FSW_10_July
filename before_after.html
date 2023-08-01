@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Before & After</title>
+        <style>
+            p{
+                background-color: gray;
+                width: 30%;
+                height: 10%;
+            }
+            p::before{
+                content: "Read : ";
+                background-color: rebeccapurple;
+                /* height: 10%; */
+                padding: 5%;
+                font-weight: bolder;
+            }
+            p::after{
+                content: ' : End  ';
+                background-color: royalblue;
+                padding: 5%;
+                /* z-index: -; */
+            }
+            .box{
+                height: 200px;
+                width: 200px;
+                background-color: gray;
+                position: relative;
+                border-radius: 100%;
+                /* z-index: 1; */
+            }
+            .box::before{
+                content: ' ';
+                padding: 15%;
+                position: absolute;
+                left: 5%;
+                z-index: -1;
+                border-radius: 100%;
+                background-color: rgb(85, 33, 33);
+            }
+            .box::after{
+                content: ' ';
+                padding: 15%;
+                position: absolute;
+                left: 65%;
+                z-index: -1;
+                border-radius: 100%;
+                background-color: rgb(85, 33, 33);
+            }
+        </style>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nam?</p>
+        <div class="box"></div>
+    </body>
+</html>

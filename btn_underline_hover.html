@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>btn UnderLine Hover</title>
+        <style>
+            body{
+                background-color: black;
+            }
+            button{
+                background-color: transparent;
+                color: white;
+                border: none;
+                font-size: 70px;
+                margin: 2%;
+                transition-duration: 1s;
+            }
+            button::after{
+                content:'';
+                display: block;
+                height: 15px;
+                background-color: goldenrod;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: 2s;
+            }
+            button:hover::after{
+                transform: scaleX(1);
+            }
+        </style>
+    </head>
+    <body>
+        <button>Click me</button>
+    </body>
+</html>
