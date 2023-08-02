@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>ToolTip</title>
+        <style>
+            .tooltip{
+                position: relative;
+                display: inline-block;
+                border: 1px solid gray;
+                width: 10%;
+            }
+            .tooltip .tooltiptext{
+                visibility: hidden;
+                /* width: auto; */
+                padding: 1%;
+                /* background-color: black;
+                color: white; */
+                position: absolute;
+                /* top:150%; */
+            }
+            .tooltiptext{
+                background-color: gray;
+                height: 5rem;
+                border:3px solid black;
+            }
+            .tooltip:hover .tooltiptext{
+                visibility: visible;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Basic Tooltip</h1>
+        <div class="tooltip">Hover me
+            <div class="tooltiptext"><ul>
+                <li><a href=""> Home</a></li>
+                <li>Contact</li>
+            </ul></div>
+        </div>
+        consectetur adipisicing elit. Sit at molestias voluptatem, distinctio maiores alias sed! Inventore quidem esse tenetur quibusdam, vero alias distinctio aspernatur vitae culpa nobis error non veritatis ea, blanditiis cupiditate nihil recusandae adipisci earum repellendus ad aliquid ex pariatur omnis labore? Dolor quasi sed omnis ipsa suscipit atque molestias aperiam ut quaerat. Quia nostrum nihil totam eveniet provident, numquam dolores odit, laborum animi a velit est quidem exercitationem, sapiente quae magni sunt. Nulla qui, quis adipisci laboriosam et esse eveniet quisquam ut enim iste dolorem soluta obcaecati perspiciatis dolores voluptates autem, dolorum minima. Ex, quidem corporis.
+        <div class="tooltiptext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, animi!</div>
+    </body>
+</html>
