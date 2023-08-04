@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Its for Desktop/Laptops */
+        .box{
+            height: 10vh;
+            background-color: gray;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        /* For Tablets */
+        @media (max-width:1300px) {
+            .box{
+                background-color: bisque;
+            }
+        }
+
+        /* For Mobiles */
+        @media(max-width :450px){
+            .box{
+                background-color: lightcoral;
+                text-align: left;
+                visibility: hidden;
+                height: 0vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 
+        System - laptop/ desktops -> width > 1300px
+        Tablets -> max width = 1300px
+        Mobiles -> max width = 450px
+     -->
+
+     <div class="box">CodeKul</div>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repudiandae, soluta aliquid id fuga perferendis voluptatibus facere amet eligendi nam incidunt itaque consequuntur corrupti eaque optio. Alias perferendis atque voluptas ab adipisci voluptatum saepe, iusto nemo ipsum reprehenderit voluptatem esse id at aliquam nihil dolorum soluta hic perspiciatis exercitationem incidunt? Libero dolorem corporis iste qui aperiam praesentium laborum porro officiis perferendis vel impedit tempore doloribus quasi quos facere dicta perspiciatis, eius blanditiis dolores, amet quod non. Provident, soluta. Vitae accusamus sint fugiat, temporibus sapiente qui maxime debitis possimus ipsum doloremque totam, repellat rerum consequatur esse sequi? Hic alias voluptatem optio.</p>
+</body>
+</html>

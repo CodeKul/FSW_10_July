@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    background-color: #E5E5CB;
+}
+
+/* Header Section */
+.header{
+    background-color: #1A120B;
+    color: #E5E5CB;
+    /* height: 2rem; */
+    padding: 2rem;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 40px #baa18a;
+}
+
+/* Navigation section    */
+.nav{
+    background-color: #3C2A21;
+    margin: 0;
+}
+.navul{
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+.navli{
+    float: right;
+    padding: 1rem;
+    cursor:grabbing;
+}
+.nava{
+    color: #E5E5CB;
+    text-decoration: none;
+    cursor:grabbing;
+}
+.navli:hover{
+    border: 1px solid #E5E5CB;
+}
+
+/* Offer Section Marquee */
+.offer{
+    padding: 1rem;
+    color: #1A120B;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    border-bottom: 2px solid #1A120B;
+}
+
+/* Main Middle Part */
+.mainmiddle{
+    background-color: #baa18a;
+    color: #1A120B;
+    text-align: center;
+    height: 20rem;
+    overflow:hidden;
+}
+
+.middletitle{
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.middlea{
+    padding: 1rem;
+    /* width: 3rem; */
+    background-color: #1A120B;
+    color: #E5E5CB;
+    text-decoration: none;
+}
+
+/* Courses details Mini */
+.maincourseblog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+}
+.course{
+    box-shadow: 0px 0px 10px #1A120B;
+    background-color: #E5E5CB;
+    margin: 1rem;
+    width: 20rem;
+    height: 20rem;
+    transition-duration: 0.5s;
+}
+.course:hover{
+    transform: scale(1.1);
+}
+
+/* Online Education intro block */
+.onlineintro{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    height: auto;
+    /* background-color: #3C2A21; */
+    position: relative;
+    background-image: url(../media/online-course.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 80%;
+}
+.onlinetitle{
+    height: 20rem;
+    position: relative;
+    left: 20%;
+    top: 130px;
+    width: 40%;
+    line-height: 2;
+    font-size: 30px;
+    font-weight: bold;
+}
+.onlineintroo{
+    font-size: 15px;
+    font-weight: 100;
+}
+@media (max-width:450px) {
+    .onlineintro{
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: center; */
+        height: auto;
+        /* background-color: #3C2A21; */
+        position: relative;
+        background-image: url(../media/online-course.png);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position-x: 100%;
+        background-position-Y: 10%;
+    }
+    .onlinetitle{
+        height: 20rem;
+        position: relative;
+        /* left: 10%; */
+        top: 40px;
+        width: 40%;
+        line-height: 1.5;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .onlineintroo{
+        font-size: 10px;
+        font-weight: 100;
+    }
+}
