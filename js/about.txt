@@ -1,0 +1,96 @@
+>> What is JS ?
+    << Scripting lang
+
+>> How To run Files of js :
+    .. in cmd -> node FileName
+
+>> How to print in js :
+    .. console.log('statement'); -> output -> terminal
+    .. document.write('statement'); -> output -> webPage
+
+>> Variables :
+    .. Containers
+    .. It store values
+    .. How to define Variables?
+        1) var
+            .. var VariableName;
+            .. Global, old version, temp
+
+        2) let
+            .. let VariableName;
+            .. Local, new version, temp
+
+        3) const 
+            .. const VariableName;;
+            .. Local, new version, per
+
+>> Data Types :
+    1) Numbers 
+        .. Int
+                .. 10,1,50,etc
+
+        .. Float
+                .. 1.2, 2.5 etc 
+
+    2) String 
+        ... ' ' 
+        ... " "
+        ... ` `
+
+    3) Object 
+        .. Multiple + Multy type
+
+        . Array :
+            .. []
+
+        . Dictionary :
+            .. {key:value;}
+
+    4) Bool 
+        .. 0 (False)
+        .. 1 (True)
+
+>> typeof(statement) -> Return the data type of your statement
+
+>> Operators :
+    . Arithmatic   -> + - * etc
+    . Assignment    -> = += -= *= etc
+    . Comparision   -> < > <= == === != etc
+    . String        -> +
+    . Logical       -> && ||
+    . Bitwise       -> & | ~ ^ << >> >>>
+    . Ternary       -> 
+    . Type          -> typeof
+
+
+>> Conditions :
+    .. if(condition){statement}
+    .. else if(condition){statement}
+    .. else{statement} -> Default value
+
+------------------------- task 16_08_2023--------------------------------------------
+    price = ...
+    quantity = ...
+    totalPrice = price*quantity;
+     
+     totalPrice= >1000 -> 10% off
+     totalPrice= <500 -> 7% off
+     totalPrice= >5000 -> 15% off
+     totalPrice= >10000 -> 20% off
+
+     print the payble amount 
+----------------------------------------------------------------------------------------
+
+>> Loops :
+    .. while()
+        .. startpoint
+                .. while(endpoint){
+                        statement
+                        increment/decrement
+                     }
+
+
+            table -> 3*1=3 -> it will be dynamic
+        ------------------------------------------------------------                     
+    .. for() :
+                .. for(startpoint;endpoint;jump){statement}
