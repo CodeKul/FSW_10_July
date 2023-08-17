@@ -94,3 +94,16 @@
         ------------------------------------------------------------                     
     .. for() :
                 .. for(startpoint;endpoint;jump){statement}
+
+>> Functions :
+    
+    ..  function FunName(Parameter){statement};
+
+    .. arrow functionn:
+        .. const/let/var FunName = (Parameter) => {statement};
+
+    .. call back :
+        .. (Parameter) => {statement}; -> use in node, react, express
+
+    .. Emit :
+        .. in node only
