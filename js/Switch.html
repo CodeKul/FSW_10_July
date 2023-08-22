@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- 
+        switch(condition/expression){
+            case 1:
+                block
+            case 2:
+                block
+            case 3:
+                block
+            ....
+            default:
+                block
+        }
+     -->
+
+     <h2>Days using switch</h2>
+     <div id="dayy"></div>
+     <script>
+        let day;
+
+        switch(new Date().getDate()){
+            case 0:
+                day="Sunday";
+                break;
+            case 1:
+                day="Monday";
+                break;
+            case 2:
+                day="Tuesday";
+                break;
+            case 3:
+                day='Wednesday';
+                break;
+            case 4:
+                day='Thursday';
+                break;
+            case 5:
+                day='Friday';
+                break;
+            case 6:
+                day="Saturday";
+                break;
+            default:
+                day='nothing';
+                break;
+        }
+
+        document.getElementById('dayy').innerHTML="Today is : "+day;
+     </script>
+</body>
+</html>

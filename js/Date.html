@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Module</title>
+</head>
+<body>
+    
+    <script>
+        document.write(Date()+'<br/>');
+        document.write(new Date("2022-06-14")+'<br/>');
+        document.write(new Date(2002,5)+'<br/>');
+        document.write(new Date(2002,4,12,10)+'<br/>');
+        document.write('<br/>')
+        // 1-> year 2-> monthIndex 3->day/date 4-> hour 5->minites 6->second 7->miliseconds
+
+        var newDate=new Date("2022-05-12");
+        document.write(`Year is ${newDate.getFullYear()}<br/>`);
+        document.write(`Month is ${newDate.getMonth()}<br/>`);
+        document.write(`Hour is ${newDate.getHours()}<br/>`);
+        document.write(`Minites is ${newDate.getMinutes()}<br/><br/>`);
+
+        
+        var currentDate=new Date();
+        currentDate.setFullYear(2002);
+        document.write(`The Change year is  : ${currentDate}`)
+    </script>
+</body>
+</html>
