@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Regular Expression</h1>
+    <div id="res"></div>
+
+    <script>
+        var text='Hell__lo how are you ??';
+        let pattern=/[_]/g;
+        let checkk=text.match(pattern);
+
+        // match -> [A-z], [a-z], [A-Z], [0-9]
+
+        document.getElementById('res').innerHTML=checkk;
+    </script>
+</body>
+</html>

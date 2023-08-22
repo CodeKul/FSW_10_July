@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" onsubmit="return fun()">
+        <input type="text" id="uname" />
+        <span id="uerr"></span><br/>
+        <input type="number" id="qu" />
+        <input type="submit" />
+    </form>
+
+    <script>
+        function fun(){
+            // document.write('called');
+            var uname=document.forms['myform']['uname'].value;
+            var quantity=document.forms['myform']['qu'].value;
+            // document.write(uname);
+
+            if(uname==''){
+                // alert("Please enter your username");
+                document.getElementById('uerr').innerHTML='Please Enter Username';
+                return false;
+            }
+            else if(uname.length<5){
+                 alert("Username must be atleast five characters long.");
+                 return false;
+            }
+            else if(quantity<1){
+                alert('Please Enter Qunatity more then one.')
+            }
+        }
+
+
+    </script>
+    <!-- 
+        required -> cus validation
+        Mini length -> cus validation
+        max lenght  -> cus validation
+        check the user name is in string only or not with the use of match regex
+     -->
+</body>
+</html>

@@ -107,3 +107,10 @@
 
     .. Emit :
         .. in node only
+
+
+>> DOM 
+    .. Document Object Model
+
+>> BOM 
+    .. Browser Object Model
