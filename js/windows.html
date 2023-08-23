@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="redirec()" >Click to redirect</button><br/>
+    <script>
+        var heightt=window.innerHeight;
+        document.write(heightt+'<br/>');
+
+        var widthh=window.innerWidth;
+        document.write(widthh);
+
+        document.write('<br/>'+window.location.href);
+        document.write('<br/>'+window.location.host);
+        document.write('<br/>'+window.location.hostname);
+        document.write('<br/>'+window.location.pathname);
+        document.write('<br/>'+window.location.protocol);
+        document.write('<br/>'+window.location.port);
+
+        function redirec(){
+            window.location.assign("http://127.0.0.1:5500/print.html")
+        }
+
+    </script>
+</body>
+</html>
