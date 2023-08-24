@@ -8,11 +8,9 @@
 <body>
     
     <script>
-        console.log('Print Msg on console');
-        console.error('Print Error on console');
-        console.warn('Print Warning on console');
-        // console.table();
-        console.clear();
+        localStorage.setItem("name","CodeKul");
+        console.log(localStorage.getItem('name'));
+        document.write(localStorage.getItem('name'));
     </script>
 </body>
 </html>

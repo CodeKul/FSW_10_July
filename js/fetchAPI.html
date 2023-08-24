@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        async function FetchData(){
+            var fetchh = await fetch("https://api.adviceslip.com/advice");
+            // console.log(fetchh);
+            // document.write(fetchh);
+            var JsonFetch= await fetchh.json();
+            console.log(JsonFetch);
+            document.write(JsonFetch.slip.id+'<br/>');
+            document.write(JsonFetch.slip.advice+'<br/>');
+        }
+
+        FetchData();
+    </script>
+</body>
+</html>
